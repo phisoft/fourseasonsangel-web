@@ -984,7 +984,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/testimonials-bg.jpg") no-repeat;
+  background: url("../img/about-boxes-bg.jpg") center top no-repeat fixed;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -997,7 +997,8 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(13, 20, 26, 0.7);
+  background: rgba(255, 255, 255, 0.92);
+
 }
 
 .testimonials .section-header {
@@ -1019,6 +1020,11 @@ section {
   border-radius: 50%;
   border: 6px solid rgba(255, 255, 255, 0.15);
   margin: 0 auto;
+}
+
+.courses-img {
+  width: 700px;
+  height: auto;
 }
 
 .testimonials .testimonial-item h3 {
