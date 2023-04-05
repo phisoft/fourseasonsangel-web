@@ -986,8 +986,8 @@ section {
 }
 .img-fluid {
   max-width: 100%;
-  height: -webkit-fill-available;
-}
+  height: auto;
+  }
 
 /*--------------------------------------------------------------
 # Courses
@@ -1678,4 +1678,10 @@ section {
 
 #footer .credits a {
   transition: 0.3s;
+}
+/* temporary hidden in the phone screen size because the context on the row is not same */
+@media screen and (max-width: 992px) {
+  #hidethis{
+    display: none;
+  }
 }
