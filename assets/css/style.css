@@ -10,7 +10,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Asap', sans-serif;
   color: #444444;
 }
 
@@ -34,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Asap', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -424,7 +424,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/background4A.jpg") top center;
+  background: url("../img/head3.png") top center;
   background-size: cover;
   position: relative;
   padding: 0;
@@ -432,7 +432,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(13, 20, 26, 0.7);
+  background: rgba(13, 20, 26, 0.573);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -454,36 +454,41 @@ h6 {
 }
 
 #hero h1 {
-  margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
+  margin: 400px 0 0 0;
+  font-size: 35px;
+  font-weight: 600;
   line-height: 56px;
   text-transform: uppercase;
   color: #fff;
+  width: 80vw;
+  text-align: left;
 }
 
 #hero h2 {
   color: #eee;
-  margin-bottom: 50px;
-  font-size: 24px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  width: 80vw;
+  text-align: left;
 }
 
 #hero .btn-get-started {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Asap', sans-serif;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 14px;
-  display: inline-block;
+  font-size: 16px;
   padding: 10px 35px 10px 35px;
   border-radius: 4px;
   transition: 0.5s;
-  color: #fff;
-  background: #39718d;
-  border: 2px solid #39718d;
+  color: #39718d;;
+  background: #fff;
+  border: 2px solid #ffffff;
 }
 
 #hero .btn-get-started:hover {
   border-color: #fff;
+  color: #fff;
   background: rgba(255, 255, 255, 0.1);
 }
 
@@ -554,7 +559,7 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #5c8eb0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Asap', sans-serif;
 }
 
 .section-title h2::after {
@@ -572,20 +577,27 @@ section {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Asap', sans-serif;
   color: #263d4d;
 }
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+
 .about .container {
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding-bottom: 15px;
+  height: 100%;
+  /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding-bottom: 15px; */
+}
+
+.about .icon1 {
+  background-image: url(assets/img/tooth.png);
 }
 
 .about .count-box {
-  padding: 60px 0;
+  padding: 70px 0 30px 0;
   width: 100%;
 }
 
@@ -595,6 +607,15 @@ section {
   color: #a1bdd1;
   float: left;
   line-height: 0;
+}
+
+.about .count-box img {
+  display: block;
+  font-size: 48px;
+  color: #a1bdd1;
+  float: left;
+  line-height: 0;
+  width: 48px;
 }
 
 .about .count-box span {
@@ -609,10 +630,15 @@ section {
 .about .count-box p {
   padding: 5px 0 0 0;
   margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Asap', sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   color: #2e4b5e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 100%;
 }
 
 .about .count-box a {
@@ -621,7 +647,7 @@ section {
   margin-top: 20px;
   color: #2e4b5e;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Asap', sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -637,6 +663,7 @@ section {
   font-weight: 700;
   font-size: 24px;
   color: #263d4d;
+  margin-bottom: 20px;
 }
 
 .about .content ul {
@@ -745,10 +772,14 @@ section {
 # About Boxes
 --------------------------------------------------------------*/
 .about-boxes {
-  background: url("../img/about-boxes-bg.jpg") center top no-repeat fixed;
+  background: url("../img/quotes2.png");
   background-size: cover;
-  padding: 60px 0 30px 0;
+  padding: 70px 0;
   position: relative;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-position: center center;
 }
 
 .about-boxes::before {
@@ -758,7 +789,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.92);
+  background: #39718dc1;
   z-index: 9;
 }
 
@@ -766,6 +797,10 @@ section {
 .about-boxes .container-fluid {
   position: relative;
   z-index: 10;
+}
+
+.about-boxes h1 {
+  color: #fff;
 }
 
 .about-boxes .card {
@@ -823,6 +858,93 @@ section {
 
 @media (max-width: 1024px) {
   .about-boxes {
+    background-attachment: scroll;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# About Boxes
+--------------------------------------------------------------*/
+.quotes {
+  background: url("../img/quotes-img.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 30px 0;
+  position: relative;
+}
+
+.quotes::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 9;
+}
+
+.quotes.container,
+.quotes .container-fluid {
+  position: relative;
+  z-index: 10;
+}
+
+.quotes .card {
+  border-radius: 3px;
+  border: 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.quotes .card-icon {
+  text-align: center;
+  margin-top: -32px;
+}
+
+.quotes .card-icon i {
+  font-size: 32px;
+  color: #fff;
+  width: 64px;
+  height: 64px;
+  padding-top: 5px;
+  text-align: center;
+  background-color: #39718d;
+  border-radius: 4px;
+  text-align: center;
+  border: 4px solid #fff;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.quotes .card-body {
+  padding-top: 12px;
+}
+
+.quotes .card-title {
+  font-weight: 700;
+  text-align: center;
+}
+
+.quotes .card-title a {
+  color: #15222b;
+}
+
+.quotes .card-title a:hover {
+  color: #39718d;
+}
+
+.quotes .card-text {
+  color: #5e5e5e;
+}
+
+.quotes .card:hover .card-icon i {
+  background: #fff;
+  color: #39718d;
+}
+
+@media (max-width: 1024px) {
+  .quotes {
     background-attachment: scroll;
   }
 }
@@ -1560,7 +1682,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Asap', sans-serif;
   color: #fff;
 }
 
