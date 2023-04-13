@@ -127,8 +127,9 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: #39718d;
+  background: #ffffff;
   padding: 10px 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.09);
 }
 
 #header .logo {
@@ -183,10 +184,10 @@ h6 {
   position: relative;
   justify-content: space-between;
   padding: 0 3px;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.9);
+  color: #39718d;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -222,7 +223,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #fff;
+  color: #39718d;
 }
 
 .navbar .getstarted,
@@ -230,15 +231,15 @@ h6 {
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 4px;
-  color: #fff;
-  border: 2px solid #fff;
+  color: #39718d;
+  border: 2px solid #39718d;
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  color: #39718d;
-  background: #d6e5f8;
-  border-color: #d6e5f8;
+  color: #ffffff;
+  background: #39718d;
+  border-color: #39718d;
 }
 
 .navbar>ul>li>.getstarted:before {
@@ -989,7 +990,7 @@ section {
   border: 1px solid #b5ccdb;
   padding: 15px;
   transition: 0.3s;
-  color: #15222b;
+  color: #192b15;
   border-radius: 0;
   display: flex;
   align-items: center;
@@ -1064,6 +1065,100 @@ section {
   margin-bottom: 0;
 }
 
+//
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+
+.services2 span {
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+.services2 .nav-tabs {
+  border: 0;
+  justify-content: center;
+}
+
+.services2 .nav-link {
+  border: 1px solid #b5ccdb;
+  padding: 15px;
+  transition: 0.3s;
+  color: #152b17;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.services2 .nav-link i {
+  padding-right: 15px;
+  font-size: 48px;
+}
+
+.services2 .nav-link h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.services2 .nav-link:hover {
+  color: #39718d;
+}
+
+.services2 .nav-link.active {
+  background: #39718d;
+  color: #fff;
+  border-color: #39718d;
+}
+
+@media (max-width: 768px) {
+  .services2 .nav-link i {
+    padding: 0;
+    line-height: 1;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 575px) {
+  .services2 .nav-link {
+    padding: 15px;
+  }
+
+  .services2 .nav-link i {
+    font-size: 24px;
+  }
+}
+
+.services2 .tab-content {
+  margin-top: 30px;
+}
+
+.services2 .tab-pane h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.services2 .tab-pane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services2 .tab-pane ul li {
+  padding-bottom: 10px;
+}
+
+.services2 .tab-pane ul i {
+  font-size: 20px;
+  padding-right: 15px;
+  color: #39718d;
+}
+
+.services2 .tab-pane p:last-child {
+  margin-bottom: 0;
+}
 /*--------------------------------------------------------------
 # Devices
 --------------------------------------------------------------*/
@@ -1116,7 +1211,7 @@ section {
 --------------------------------------------------------------*/
 .courses {
   padding: 80px 0;
-  background: url("../img/about-boxes-bg.jpg") center top no-repeat fixed;
+  background: url("../img/bg-2.png") center top no-repeat fixed;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1129,7 +1224,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.67);
 
 }
 
