@@ -116,6 +116,55 @@ h6 {
   }
 }
 
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2e4b5e;
+  height: 40px;
+  padding: 0;
+}
+
+#topbar .contact-info a {
+  color: #2e4b5e;
+  transition: 0.3s;
+  font-size: 14px;
+  letter-spacing: normal;
+}
+
+#topbar .contact-info a:hover {
+  color: #39718d;
+}
+
+#topbar .contact-info i {
+  color: #39718d;
+  line-height: 0;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+#topbar .contact-info .phone-icon {
+  margin-left: 15px;
+}
+
+#topbar .social-links a {
+  color: #39718d;
+  padding: 4px 12px;
+  display: inline-block;
+  line-height: 1px;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+#topbar .social-links a:hover {
+  color: #39718d;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -187,7 +236,7 @@ h6 {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #39718d;
+  color: #2e4b5e;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -317,7 +366,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #39718d;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -539,7 +588,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 80px 0;
   overflow: hidden;
 }
 
@@ -593,13 +642,26 @@ section {
   padding-bottom: 15px; */
 }
 
+.about h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #5c8eb0;
+  font-family: 'Asap', sans-serif;
+}
+
 .about .icon1 {
   background-image: url(assets/img/tooth.png);
 }
 
 .about .count-box {
-  padding: 70px 0 30px 0;
+  padding: 30px 0 30px 0;
   width: 100%;
+  background-color: #f0f4f8;
 }
 
 .about .count-box i {
@@ -612,11 +674,13 @@ section {
 
 .about .count-box img {
   display: block;
-  font-size: 48px;
+  font-size: 55px;
   color: #a1bdd1;
   float: left;
   line-height: 0;
-  width: 48px;
+  width: 60px;
+  margin-left: 30px;
+  border-radius: 5px;
 }
 
 .about .count-box span {
@@ -640,6 +704,7 @@ section {
   justify-content: center;
   align-items: left;
   height: 100%;
+  text-align: center;
 }
 
 .about .count-box a {
@@ -987,7 +1052,7 @@ section {
 }
 
 .services .nav-link {
-  border: 1px solid #b5ccdb;
+  background-color: #f0f4f8;
   padding: 15px;
   transition: 0.3s;
   color: #192b15;
@@ -1010,7 +1075,9 @@ section {
 }
 
 .services .nav-link:hover {
-  color: #39718d;
+  background: #39718d;
+  color: #fff;
+  border-color: #39718d;
 }
 
 .services .nav-link.active {
@@ -1082,7 +1149,7 @@ section {
 }
 
 .services2 .nav-link {
-  border: 1px solid #b5ccdb;
+  background-color: #f0f4f8;
   padding: 15px;
   transition: 0.3s;
   color: #152b17;
@@ -1105,7 +1172,9 @@ section {
 }
 
 .services2 .nav-link:hover {
-  color: #39718d;
+  background: #39718d;
+  color: #fff;
+  border-color: #39718d;
 }
 
 .services2 .nav-link.active {
@@ -1250,7 +1319,7 @@ section {
 }
 
 .courses-img {
-  width: 60%;
+  width: 50%;
   height: auto;
 }
 
@@ -1599,8 +1668,9 @@ section {
 .contact .info-box p {
   padding: 0;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 0;
+  font-weight: 500;
 }
 
 .contact .php-email-form {
@@ -1749,7 +1819,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #183442;
+  background: #39718d;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -1758,7 +1828,7 @@ section {
 #footer .footer-top {
   background: #39718d;
   border-bottom: 1px solid #39718d;
-  padding: 60px 0 30px 0;
+  padding: 60px 0 0 0;
 }
 
 #footer .footer-top .footer-info {
@@ -1774,8 +1844,9 @@ section {
 }
 
 #footer .footer-top .footer-info p {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: auto;
+  font-weight: 400;
   margin-bottom: 0;
   font-family: 'Asap', sans-serif;
   color: #fff;
@@ -1845,7 +1916,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #39718d;
+  color: #ffffff83;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1883,7 +1954,7 @@ section {
 
 #footer .copyright {
   text-align: center;
-  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 #footer .credits {
