@@ -10,7 +10,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Asap', sans-serif;
   color: #444444;
 }
 
@@ -34,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Asap', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -116,6 +116,55 @@ h6 {
   }
 }
 
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2e4b5e;
+  height: 40px;
+  padding: 0;
+}
+
+#topbar .contact-info a {
+  color: #2e4b5e;
+  transition: 0.3s;
+  font-size: 14px;
+  letter-spacing: normal;
+}
+
+#topbar .contact-info a:hover {
+  color: #39718d;
+}
+
+#topbar .contact-info i {
+  color: #39718d;
+  line-height: 0;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+#topbar .contact-info .phone-icon {
+  margin-left: 15px;
+}
+
+#topbar .social-links a {
+  color: #39718d;
+  padding: 4px 12px;
+  display: inline-block;
+  line-height: 1px;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+#topbar .social-links a:hover {
+  color: #39718d;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -127,8 +176,9 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: #39718d;
+  background: #ffffff;
   padding: 10px 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.09);
 }
 
 #header .logo {
@@ -183,10 +233,10 @@ h6 {
   position: relative;
   justify-content: space-between;
   padding: 0 3px;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.9);
+  color: #2e4b5e;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -222,7 +272,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #fff;
+  color: #39718d;
 }
 
 .navbar .getstarted,
@@ -230,15 +280,15 @@ h6 {
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 4px;
-  color: #fff;
-  border: 2px solid #fff;
+  color: #39718d;
+  border: 2px solid #39718d;
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  color: #39718d;
-  background: #d6e5f8;
-  border-color: #d6e5f8;
+  color: #ffffff;
+  background: #39718d;
+  border-color: #39718d;
 }
 
 .navbar>ul>li>.getstarted:before {
@@ -316,7 +366,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #39718d;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -424,7 +474,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/background4A.jpg") top center;
+  background: url("../img/head3.png") top center;
   background-size: cover;
   position: relative;
   padding: 0;
@@ -432,7 +482,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(13, 20, 26, 0.7);
+  background: rgba(13, 20, 26, 0.573);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -454,36 +504,41 @@ h6 {
 }
 
 #hero h1 {
-  margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
+  margin: 400px 0 0 0;
+  font-size: 35px;
+  font-weight: 600;
   line-height: 56px;
   text-transform: uppercase;
   color: #fff;
+  width: 80vw;
+  text-align: left;
 }
 
 #hero h2 {
   color: #eee;
-  margin-bottom: 50px;
-  font-size: 24px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  width: 80vw;
+  text-align: left;
 }
 
 #hero .btn-get-started {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Asap', sans-serif;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 14px;
-  display: inline-block;
+  font-size: 16px;
   padding: 10px 35px 10px 35px;
   border-radius: 4px;
   transition: 0.5s;
-  color: #fff;
-  background: #39718d;
-  border: 2px solid #39718d;
+  color: #39718d;;
+  background: #fff;
+  border: 2px solid #ffffff;
 }
 
 #hero .btn-get-started:hover {
   border-color: #fff;
+  color: #fff;
   background: rgba(255, 255, 255, 0.1);
 }
 
@@ -533,7 +588,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 80px 0;
   overflow: hidden;
 }
 
@@ -554,7 +609,7 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #5c8eb0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Asap', sans-serif;
 }
 
 .section-title h2::after {
@@ -572,21 +627,41 @@ section {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Asap', sans-serif;
   color: #263d4d;
 }
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+
 .about .container {
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding-bottom: 15px;
+  height: 100%;
+  /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding-bottom: 15px; */
+}
+
+.about h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #5c8eb0;
+  font-family: 'Asap', sans-serif;
+}
+
+.about .icon1 {
+  background-image: url(assets/img/tooth.png);
 }
 
 .about .count-box {
-  padding: 60px 0;
+  padding: 30px 0 30px 0;
   width: 100%;
+  background-color: #f0f4f8;
 }
 
 .about .count-box i {
@@ -595,6 +670,17 @@ section {
   color: #a1bdd1;
   float: left;
   line-height: 0;
+}
+
+.about .count-box img {
+  display: block;
+  font-size: 55px;
+  color: #a1bdd1;
+  float: left;
+  line-height: 0;
+  width: 60px;
+  margin-left: 30px;
+  border-radius: 5px;
 }
 
 .about .count-box span {
@@ -609,10 +695,16 @@ section {
 .about .count-box p {
   padding: 5px 0 0 0;
   margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Asap', sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   color: #2e4b5e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 100%;
+  text-align: center;
 }
 
 .about .count-box a {
@@ -621,7 +713,7 @@ section {
   margin-top: 20px;
   color: #2e4b5e;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Asap', sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -637,6 +729,7 @@ section {
   font-weight: 700;
   font-size: 24px;
   color: #263d4d;
+  margin-bottom: 20px;
 }
 
 .about .content ul {
@@ -745,10 +838,14 @@ section {
 # About Boxes
 --------------------------------------------------------------*/
 .about-boxes {
-  background: url("../img/about-boxes-bg.jpg") center top no-repeat fixed;
+  background: url("../img/quotes2.png");
   background-size: cover;
-  padding: 60px 0 30px 0;
+  padding: 70px 0;
   position: relative;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-position: center center;
 }
 
 .about-boxes::before {
@@ -758,7 +855,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.92);
+  background: #39718dc1;
   z-index: 9;
 }
 
@@ -766,6 +863,10 @@ section {
 .about-boxes .container-fluid {
   position: relative;
   z-index: 10;
+}
+
+.about-boxes h1 {
+  color: #fff;
 }
 
 .about-boxes .card {
@@ -827,6 +928,93 @@ section {
   }
 }
 
+
+/*--------------------------------------------------------------
+# About Boxes
+--------------------------------------------------------------*/
+.quotes {
+  background: url("../img/quotes-img.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 30px 0;
+  position: relative;
+}
+
+.quotes::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 9;
+}
+
+.quotes.container,
+.quotes .container-fluid {
+  position: relative;
+  z-index: 10;
+}
+
+.quotes .card {
+  border-radius: 3px;
+  border: 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.quotes .card-icon {
+  text-align: center;
+  margin-top: -32px;
+}
+
+.quotes .card-icon i {
+  font-size: 32px;
+  color: #fff;
+  width: 64px;
+  height: 64px;
+  padding-top: 5px;
+  text-align: center;
+  background-color: #39718d;
+  border-radius: 4px;
+  text-align: center;
+  border: 4px solid #fff;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.quotes .card-body {
+  padding-top: 12px;
+}
+
+.quotes .card-title {
+  font-weight: 700;
+  text-align: center;
+}
+
+.quotes .card-title a {
+  color: #15222b;
+}
+
+.quotes .card-title a:hover {
+  color: #39718d;
+}
+
+.quotes .card-text {
+  color: #5e5e5e;
+}
+
+.quotes .card:hover .card-icon i {
+  background: #fff;
+  color: #39718d;
+}
+
+@media (max-width: 1024px) {
+  .quotes {
+    background-attachment: scroll;
+  }
+}
+
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
@@ -864,10 +1052,10 @@ section {
 }
 
 .services .nav-link {
-  border: 1px solid #b5ccdb;
+  background-color: #f0f4f8;
   padding: 15px;
   transition: 0.3s;
-  color: #15222b;
+  color: #192b15;
   border-radius: 0;
   display: flex;
   align-items: center;
@@ -887,7 +1075,9 @@ section {
 }
 
 .services .nav-link:hover {
-  color: #39718d;
+  background: #39718d;
+  color: #fff;
+  border-color: #39718d;
 }
 
 .services .nav-link.active {
@@ -942,6 +1132,102 @@ section {
   margin-bottom: 0;
 }
 
+//
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+
+.services2 span {
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+.services2 .nav-tabs {
+  border: 0;
+  justify-content: center;
+}
+
+.services2 .nav-link {
+  background-color: #f0f4f8;
+  padding: 15px;
+  transition: 0.3s;
+  color: #152b17;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.services2 .nav-link i {
+  padding-right: 15px;
+  font-size: 48px;
+}
+
+.services2 .nav-link h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.services2 .nav-link:hover {
+  background: #39718d;
+  color: #fff;
+  border-color: #39718d;
+}
+
+.services2 .nav-link.active {
+  background: #39718d;
+  color: #fff;
+  border-color: #39718d;
+}
+
+@media (max-width: 768px) {
+  .services2 .nav-link i {
+    padding: 0;
+    line-height: 1;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 575px) {
+  .services2 .nav-link {
+    padding: 15px;
+  }
+
+  .services2 .nav-link i {
+    font-size: 24px;
+  }
+}
+
+.services2 .tab-content {
+  margin-top: 30px;
+}
+
+.services2 .tab-pane h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.services2 .tab-pane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services2 .tab-pane ul li {
+  padding-bottom: 10px;
+}
+
+.services2 .tab-pane ul i {
+  font-size: 20px;
+  padding-right: 15px;
+  color: #39718d;
+}
+
+.services2 .tab-pane p:last-child {
+  margin-bottom: 0;
+}
 /*--------------------------------------------------------------
 # Devices
 --------------------------------------------------------------*/
@@ -994,7 +1280,7 @@ section {
 --------------------------------------------------------------*/
 .courses {
   padding: 80px 0;
-  background: url("../img/about-boxes-bg.jpg") center top no-repeat fixed;
+  background: url("../img/bg-2.png") center top no-repeat fixed;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1007,7 +1293,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.67);
 
 }
 
@@ -1033,7 +1319,7 @@ section {
 }
 
 .courses-img {
-  width: 60%;
+  width: 50%;
   height: auto;
 }
 
@@ -1382,8 +1668,9 @@ section {
 .contact .info-box p {
   padding: 0;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 0;
+  font-weight: 500;
 }
 
 .contact .php-email-form {
@@ -1532,16 +1819,16 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #183442;
+  background: #39718d;
   padding: 0 0 30px 0;
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 #footer .footer-top {
   background: #39718d;
   border-bottom: 1px solid #39718d;
-  padding: 60px 0 30px 0;
+  padding: 60px 0 0 0;
 }
 
 #footer .footer-top .footer-info {
@@ -1549,7 +1836,7 @@ section {
 }
 
 #footer .footer-top .footer-info h3 {
-  font-size: 28px;
+  font-size: 20px;
   margin: 0 0 15px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
@@ -1557,10 +1844,11 @@ section {
 }
 
 #footer .footer-top .footer-info p {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: auto;
+  font-weight: 400;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Asap', sans-serif;
   color: #fff;
 }
 
@@ -1625,10 +1913,11 @@ section {
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
+  font-size: 15px;
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #39718d;
+  color: #ffffff83;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1666,7 +1955,7 @@ section {
 
 #footer .copyright {
   text-align: center;
-  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 #footer .credits {
