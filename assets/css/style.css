@@ -834,6 +834,28 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  .about .count-box {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .about .count-box {
+    padding: 30px 0 30px 0;
+    height: 120px;
+    margin: 10px 0;
+  }
+
+  .about .count-box img {
+    margin-left: 20px;
+  }
+
+  /* .about .count-box p {
+    width: 10%;
+  } */
+}
+
 /*--------------------------------------------------------------
 # About Boxes
 --------------------------------------------------------------*/
@@ -1131,8 +1153,6 @@ section {
 .services .tab-pane p:last-child {
   margin-bottom: 0;
 }
-
-//
 
 /*--------------------------------------------------------------
 # Services
