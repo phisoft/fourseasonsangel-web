@@ -1,11 +1,3 @@
-/**
-* Template Name: Dewi
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/dewi-free-multi-purpose-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -27,6 +19,11 @@ a:hover {
 .justify {
   text-align: justify;
 }
+
+.blue-bg {
+  background-color: #f0f4f8;
+}
+
 
 h1,
 h2,
@@ -131,10 +128,11 @@ h6 {
 }
 
 #topbar .contact-info a {
-  color: #2e4b5e;
+  color: #39718d;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: normal;
+  font-weight: 700;
 }
 
 #topbar .contact-info a:hover {
@@ -158,7 +156,7 @@ h6 {
   display: inline-block;
   line-height: 1px;
   transition: 0.3s;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #topbar .social-links a:hover {
@@ -169,7 +167,7 @@ h6 {
 #topbar .social-links i {
   color: #39718d;
   line-height: 0;
-  font-size: 20px;
+  font-size: 15px;
 }
 /*--------------------------------------------------------------
 # Header
@@ -182,8 +180,8 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: #ffffff;
-  padding: 10px 0;
+  background: rgb(255, 255, 255);
+  padding: 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.09);
 }
 
@@ -242,7 +240,7 @@ h6 {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #2e4b5e;
+  color: #39718d;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -373,7 +371,7 @@ h6 {
 */
 .mobile-nav-toggle {
   color: #39718d;
-  font-size: 28px;
+  font-size: 35px;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -480,7 +478,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/head3.png") top center;
+  background: url("../img/new-head.jpg") top center;
   background-size: cover;
   position: relative;
   padding: 0;
@@ -488,7 +486,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(13, 20, 26, 0.573);
+  background:rgba(0, 0, 0, 0.26);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -507,10 +505,11 @@ h6 {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  height: 100vh;
 }
 
 #hero h1 {
-  margin: 400px 0 0 0;
+  margin: 50px 0 0 0;
   font-size: 35px;
   font-weight: 600;
   line-height: 56px;
@@ -537,8 +536,8 @@ h6 {
   padding: 10px 35px 10px 35px;
   border-radius: 4px;
   transition: 0.5s;
-  color: #39718d;;
-  background: #fff;
+  color: #ffffff;;
+  background: #ffffff32;
   border: 2px solid #ffffff;
 }
 
@@ -578,23 +577,68 @@ h6 {
 }
 
 @media (max-width: 768px) {
+  #header {
+    padding: 0;
+  }
+
+  #hero {
+    height: 90vh;
+  }
+
   #hero h1 {
-    font-size: 28px;
+    font-size: 36px;
     line-height: 36px;
+    text-align: left;
+    margin: 200px 0 0 0;
+    padding-right: 100px;
   }
 
   #hero h2 {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
-    margin-bottom: 30px;
+    margin: 5px 0 30px 0;
+    text-align: left;
+    padding-right: 100px;
   }
+  
+}
+
+@media (max-width: 576px) {
+  #hero {
+    height: 80vh;
+  }
+
+  #hero h1 {
+    font-size: 31px;
+    line-height: 36px;
+    text-align: left;
+    margin: 200px 0 0 0;
+    /* padding: 0px 80px; */
+  }
+
+  #hero h2 {
+    font-size: 16px;
+    margin: 5px 0 25px 0;
+    text-align: left;
+    padding: 0 150px 0 0;
+    line-height: 1.25rem;
+  }
+
+  #hero .btn-get-started {
+    align-items: center;
+  }
+
+  /* .btn-container {
+    display: flex;
+    justify-content: center;
+  } */
 }
 
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 80px 0;
+  padding: 100px 0;
   overflow: hidden;
 }
 
@@ -616,16 +660,17 @@ section {
   text-transform: uppercase;
   color: #5c8eb0;
   font-family: 'Asap', sans-serif;
+  text-align: center;
 }
 
-.section-title h2::after {
+/* .section-title h2::after {
   content: "";
   width: 120px;
   height: 1px;
   display: inline-block;
   background: #39718d;
   margin: 4px 10px;
-}
+} */
 
 .section-title p {
   margin: 0;
@@ -635,6 +680,7 @@ section {
   text-transform: uppercase;
   font-family: 'Asap', sans-serif;
   color: #263d4d;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -660,6 +706,13 @@ section {
   font-family: 'Asap', sans-serif;
 }
 
+.about h3 {
+  margin-top: 15px;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 30px;
+}
+
 .about .icon1 {
   background-image: url(assets/img/tooth.png);
 }
@@ -667,7 +720,7 @@ section {
 .about .count-box {
   padding: 30px 0 30px 0;
   width: 100%;
-  background-color: #f0f4f8;
+  background-color: #ffffff67;
 }
 
 .about .count-box i {
@@ -685,7 +738,7 @@ section {
   float: left;
   line-height: 0;
   width: 60px;
-  margin-left: 30px;
+  margin-left: 20px;
   border-radius: 5px;
 }
 
@@ -840,10 +893,28 @@ section {
   }
 }
 
+@media (max-width: 992px) {
+  .about h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .about h3 {
+    text-align: center;
+  }
+
+  .about .count-box {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border-radius: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .about .count-box {
     margin: 10px 0;
   }
+
 }
 
 @media (max-width: 576px) {
@@ -857,9 +928,6 @@ section {
     margin-left: 20px;
   }
 
-  /* .about .count-box p {
-    width: 10%;
-  } */
 }
 
 /*--------------------------------------------------------------
@@ -958,13 +1026,22 @@ section {
 
 
 /*--------------------------------------------------------------
-# About Boxes
+# quotes
 --------------------------------------------------------------*/
+
 .quotes {
-  background: url("../img/quotes-img.jpg") center top no-repeat fixed;
+  background: url("../img/quotes2.png");
   background-size: cover;
-  padding: 60px 0 30px 0;
+  padding: 70px 0;
   position: relative;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .quotes::before {
@@ -974,14 +1051,18 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.92);
-  z-index: 9;
+  background: #39718dc1;
+  z-index: 0;
 }
 
 .quotes.container,
 .quotes .container-fluid {
   position: relative;
   z-index: 10;
+}
+
+.quotes h1 {
+  color: #ffffff;
 }
 
 .quotes .card {
@@ -1034,12 +1115,18 @@ section {
 
 .quotes .card:hover .card-icon i {
   background: #fff;
-  color: #39718d;
+  color: #ffffff;
 }
 
 @media (max-width: 1024px) {
   .quotes {
     background-attachment: scroll;
+  }
+}
+
+@media (max-width: 768px) {
+  .quotes h1 {
+    text-align: center;
   }
 }
 
