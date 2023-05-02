@@ -1287,6 +1287,7 @@ section {
 .services2 span {
   font-size: 15px;
   margin-left: 20px;
+  color: #4b818a;
 }
 
 .services2 .nav-tabs {
@@ -1295,10 +1296,11 @@ section {
 }
 
 .services2 .nav-link {
-  background-color: #f0f4f8;
+  background-color: #ffffff;
+  border: 2px solid #77c5d2;
   padding: 15px;
   transition: 0.3s;
-  color: #152b17;
+  color: #77c5d2;
   border-radius: 0;
   display: flex;
   align-items: center;
@@ -1318,15 +1320,15 @@ section {
 }
 
 .services2 .nav-link:hover {
-  background: #39718d;
+  background: #77c5d2;
   color: #fff;
-  border-color: #39718d;
+  border-color: #77c5d2;
 }
 
 .services2 .nav-link.active {
-  background: #39718d;
+  background: #77c5d2;
   color: #fff;
-  border-color: #39718d;
+  border-color: #77c5d2;
 }
 
 @media (max-width: 768px) {
@@ -1354,6 +1356,11 @@ section {
 .services2 .tab-pane h3 {
   font-weight: 600;
   font-size: 26px;
+  color: #77c5d2;
+}
+
+.services2 .tab-pane p {
+  color: #4b818a;
 }
 
 .services2 .tab-pane ul {
@@ -1368,7 +1375,7 @@ section {
 .services2 .tab-pane ul i {
   font-size: 20px;
   padding-right: 15px;
-  color: #39718d;
+  color: #bce3c6;
 }
 
 .services2 .tab-pane p:last-child {
@@ -1426,10 +1433,7 @@ section {
 --------------------------------------------------------------*/
 .courses {
   padding: 80px 0;
-  background: url("../img/bg-2.png") center top no-repeat fixed;
-  background-position: center center;
-  background-size: cover;
-  position: relative;
+  background-color: #bce3c6;
 }
 
 .courses::before {
@@ -1439,8 +1443,6 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.67);
-
 }
 
 .courses .section-header {
@@ -1799,7 +1801,7 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #39718d;
+  color: #77c5d2;
   border-radius: 50%;
   padding: 8px;
 }
@@ -1887,7 +1889,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #39718d;
+  background: #77c5d2;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1896,7 +1898,8 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #fbfdfb;
+  background: #bce3c6;
+  color: #ffffff;
 }
 
 @keyframes animate-loading {
@@ -1965,15 +1968,15 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #39718d;
+  background: #77c5d2;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 15px;
 }
 
 #footer .footer-top {
-  background: #39718d;
-  border-bottom: 1px solid #39718d;
+  background: #77c5d2;
+  border-bottom: 1px solid #77c5d2;
   padding: 60px 0 0 0;
 }
 
