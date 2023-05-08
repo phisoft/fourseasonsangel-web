@@ -21,9 +21,7 @@ a:hover {
 }
 
 .blue-bg {
-  background-color: #77c5d2;
-  border-top-right-radius: 220px;
-  border-top-left-radius: 220px;
+  background-color: #a6d2d94a;
 }
 
 .green-bg {
@@ -45,6 +43,350 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# New About
+--------------------------------------------------------------*/
+.section-text{
+    padding: 0px;
+    overflow: hidden;
+  
+}
+
+.section-text .container::after,
+.section-text .container::before,
+.section-text .row::after,
+.section-text .row::before {
+	content: " ";
+	display: table;
+}
+.section-text .container::after,
+.section-text .row::after {
+	clear: both;
+}
+.section-text .row {
+	display: block;
+}
+.section-text .section-text {
+	background: #010101;
+	color: #fafafa;
+	overflow: hidden;
+}
+.section-text .picture {
+	width: 50%;
+	float: left;
+}
+.section-text .img-fluid {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+.section-text .visible-xs {
+	display: none!important;
+}
+
+.section-text .picture img {
+	height: 491px;
+}
+
+.section-text h3 {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 32px;
+  color: #bce3c6;
+  font-weight: 600;
+  width: 80%;
+} 
+
+.section-text .text-wrapper {
+  width: 50%;
+	float: right;
+	padding: 70px 0 50px 100px;
+}
+
+.section-text .text-wrapper h2 {
+	margin-bottom: 35px;
+}
+.section-text .text-wrapper p {
+	font-size: 18px;
+	margin-bottom: 50px;
+  color: #6c8673;
+  line-height: auto;
+}
+
+@media (max-width: 767px) {
+	.section-text .visible-xs {
+		display: block!important;
+	}
+	.section-text .hidden-xs {
+		display: none;
+	}
+}
+
+@media (min-width: 992px) {
+	.section-text .picture img {
+		object-fit: cover;
+	}
+	.section-text .container {
+		width: 970px;
+	}
+}
+@media (max-width: 992px) {
+	.section-text .picture {
+		width: 100%;
+		overflow: auto;
+	}
+	.section-text .picture img {
+		height: auto;
+	}
+	.section-text .picture img {
+		height: auto;
+	}
+	.section-text .text-wrapper p br {
+		display: none;
+	}
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+	.section-text .text-wrapper {
+		padding-left: 45px;
+    padding: 90px 0 0 65px;
+	}
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+	.section-text .text-wrapper {
+		width: 100%;
+		float: none;
+		clear: both;
+		padding: 60px 0 50px 0;
+	}
+	.section-text .text-wrapper p {
+		font-size: 18px;
+		margin-bottom: 35px;
+	}
+
+  .section-text h3 {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+	.section-text .picture img {
+		margin: 0 auto;
+	}
+	.section-text .text-wrapper {
+		width: 100%;
+		padding: 45px 0 30px 0;
+		text-align: center;
+	}
+	.section-text .text-wrapper h2 {
+		text-align: center;
+		margin-bottom: 27px;
+	}
+
+	.section-text .text-wrapper p {
+		font-size: 17px;
+		text-align: left;
+		line-height: 25px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.section-text .container {
+		width: 1180px;
+	}
+}
+
+@media (max-width: 576px) {
+  .section-text .text-wrapper {
+    padding: 35px;
+  }
+
+  .section-text h3 {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .section-text .text-wrapper p {
+    font-size: 15px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Section Text 2
+--------------------------------------------------------------*/
+.section-text2{
+  padding: 0px;
+  overflow: hidden;
+}
+
+.section-text2 .container::after,
+.section-text2 .container::before,
+.section-text2 .row::after,
+.section-text2 .row::before {
+content: " ";
+display: table;
+}
+.section-text2 .container::after,
+.section-text2 .row::after {
+clear: both;
+}
+.section-text2 .row {
+display: block;
+}
+.section-text2 .section-text {
+background: #010101;
+color: #fafafa;
+overflow: hidden;
+}
+.section-text2 .picture {
+width: 50%;
+float: right;
+}
+.section-text2 .img-fluid {
+width: 100%;
+max-width: 100%;
+height: auto;
+}
+.section-text2 .visible-xs {
+display: none!important;
+}
+
+.section-text2 .picture img {
+  height: 491px;
+  }
+  
+  .section-text2 h3 {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 32px;
+  color: #fae3b1;
+  font-weight: 600;
+  width: 90%;
+  } 
+  
+  .section-text2 .text-wrapper {
+    width: 50%;
+    float: left;
+    padding: 80px 50px 50px 0px;
+    /* margin-left: -56px; */
+  }
+  
+  .section-text2 .text-wrapper h2 {
+  margin-bottom: 35px;
+  }
+  .section-text2 .text-wrapper p {
+  font-size: 18px;
+  margin-bottom: 50px;
+  color: #a48d5c;
+  line-height: auto;
+  }
+
+@media (max-width: 767px) {
+.section-text2 .visible-xs {
+  display: block!important;
+}
+.section-text2 .hidden-xs {
+  display: none;
+}
+}
+
+@media (min-width: 992px) {
+.section-text2 .picture img {
+  object-fit: cover;
+}
+.section-text2 .container {
+  width: 970px;
+}
+}
+@media (max-width: 992px) {
+.section-text2 .picture {
+  width: 100%;
+  overflow: auto;
+}
+.section-text2 .picture img {
+  height: auto;
+}
+.section-text2 .picture img {
+  height: auto;
+}
+.section-text2 .text-wrapper p br {
+  display: none;
+}
+}
+
+
+@media (max-width: 1250px) and (min-width: 1200px) {
+.section-text2 .text-wrapper {
+  padding: 55px 0px 0 80px;
+  margin-left: -56px;
+}
+}
+
+@media (max-width: 1199px) and (min-width: 1000px) {
+  .section-text2 .text-wrapper {
+    padding: 55px 0px 0px 0px;
+    margin-left: -56px;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+.section-text2 .text-wrapper {
+  width: 100%;
+  float: none;
+  clear: both;
+  padding: 60px 0 50px 0px;
+}
+.section-text2 .text-wrapper p {
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+}
+@media (max-width: 768px) {
+.section-text2 .picture img {
+  margin: 0 auto;
+}
+.section-text2 .text-wrapper {
+  width: 100%;
+  padding: 45px 0 30px 0;
+  text-align: center;
+  margin-left: 0;
+}
+.section-text2 .text-wrapper h2 {
+  text-align: center;
+  margin-bottom: 27px;
+}
+.section-text2 .text-wrapper p {
+  font-size: 15px;
+  text-align: left;
+  line-height: 25px;
+}
+}
+
+@media (min-width: 1200px) {
+.section-text2 .container {
+  width: 1180px;
+}
+}
+
+@media (max-width: 576px) {
+  .section-text2 .text-wrapper {
+    padding: 35px;
+  }
+
+  .section-text2 h3 {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .section-text2 .text-wrapper p {
+    font-size: 15px;
+  }
+
+  
+}
+
+
+
+/*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
@@ -54,7 +396,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #39718d;
+  background: #bce3c6;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -68,7 +410,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #d6e5f8;
+  background: #77c5d2;
   color: #fff;
 }
 
@@ -140,7 +482,7 @@ h6 {
 #topbar .contact-info a {
   color: #ffffff;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 17px;
   letter-spacing: normal;
   font-weight: 700;
 }
@@ -166,7 +508,7 @@ h6 {
   display: inline-block;
   line-height: 1px;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 #topbar .social-links a:hover {
@@ -221,6 +563,7 @@ h6 {
 */
 .navbar {
   padding: 0;
+  color: red;
 }
 
 .navbar ul {
@@ -392,6 +735,7 @@ h6 {
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
+    color: #ffffff;
   }
 
   .navbar ul {
@@ -491,7 +835,7 @@ h6 {
   height: 100vh;
   background: url("../img/new-header.jpg") right;
   background-size: cover;
-  position: relative;
+  position: sticky;
   padding: 0;
 }
 
@@ -585,12 +929,39 @@ h6 {
 #hero h1 {
   padding-right: 500px;
 }
+}
+
+@media (max-width: 1100px) and (min-width: 1025px){
+  #hero h1 {
+    padding-right: 400px;
+  }
+}
+
+@media (max-width: 1024px){
+  #hero {
+    background-attachment: fixed;
+  }
+
+  #hero h1 {
+    padding-right: 300px;
+  }
 
 }
 
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
+@media (max-width: 992px) {
+  #hero h1 {
+    padding: 400px 0 0 0;
+    font-size: 40px;
+    text-shadow: rgb(132, 132, 132) 1px 0 10px;
+  }
+
+  #hero h2 {
+    font-size: 25px;
+    text-shadow: rgb(132, 132, 132) 1px 0 10px;
+  }
+
+  #hero .btn-get-started {
+    font-size: 20px;
   }
 }
 
@@ -607,16 +978,19 @@ h6 {
     font-size: 36px;
     line-height: 36px;
     text-align: left;
-    margin: 200px 0 0 0;
-    padding-right: 100px;
+    margin: 0;
+    padding-right: 0;
+    text-shadow: rgb(132, 132, 132) 1px 0 10px;
+
   }
 
   #hero h2 {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 24px;
-    margin: 5px 0 30px 0;
+    margin: 10px 0 30px 0;
     text-align: left;
     padding-right: 100px;
+    text-shadow: rgb(132, 132, 132) 1px 0 10px;
   }
   
 }
@@ -624,21 +998,24 @@ h6 {
 @media (max-width: 576px) {
   #hero {
     height: 80vh;
+    background-position-x: right -150px;
+    position: sticky;
+
   }
 
   #hero h1 {
-    font-size: 31px;
+    font-size: 35px;
     line-height: 36px;
     text-align: left;
-    margin: 200px 0 0 0;
-    /* padding: 0px 80px; */
+    margin: 100px 0 0 0;
+    padding: 100px 0 0 0;
   }
 
   #hero h2 {
-    font-size: 16px;
+    font-size: 15px;
     margin: 5px 0 25px 0;
     text-align: left;
-    padding: 0 150px 0 0;
+    padding: 0;
     line-height: 1.25rem;
   }
 
@@ -680,15 +1057,6 @@ section {
   font-family: 'Asap', sans-serif;
   text-align: center;
 }
-
-/* .section-title h2::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  display: inline-block;
-  background: #39718d;
-  margin: 4px 10px;
-} */
 
 .section-title p {
   margin: 0;
@@ -929,8 +1297,14 @@ section {
 
   .about .count-box {
     margin-bottom: 10px;
-    margin-left: 30px;
+    margin-left: 0;
     border-radius: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about .count-box p {
+  font-size: 18px;
   }
 }
 
@@ -950,6 +1324,10 @@ section {
 
   .about .count-box img {
     margin-left: 20px;
+  }
+
+  .about h3 {
+    margin: 15px 0 40px 40px;
   }
 
 }
@@ -1230,7 +1608,7 @@ section {
 .services h3 {
   color:#7b6539;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -1285,7 +1663,7 @@ section {
 --------------------------------------------------------------*/
 
 .services2 span {
-  font-size: 15px;
+  font-size: 18px;
   margin-left: 20px;
   color: #4b818a;
 }
@@ -1361,6 +1739,7 @@ section {
 
 .services2 .tab-pane p {
   color: #4b818a;
+  font-size: 18px;
 }
 
 .services2 .tab-pane ul {
@@ -1380,6 +1759,17 @@ section {
 
 .services2 .tab-pane p:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .services2 .tab-pane p {
+    font-size: 15px;
+  }
+
+  .services2 span {
+    font-size: 15px;
+    margin: 0 0 10px 5px;
+  }
 }
 /*--------------------------------------------------------------
 # Devices
@@ -1510,10 +1900,18 @@ section {
   color: #eee;
 }
 
+@media (max-width: 992px) {
+  .courses-img {
+    width: auto;
+    height: 60vh;
+  }
+}
+
 @media (min-width: 992px) {
   .courses .courses-item p {
     width: 80%;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -1524,19 +1922,19 @@ section {
 
 
 .courses .swiper-pagination {
-  margin-top: 20px;
+  margin-top: 40px;
   position: relative;
 }
 
 .courses .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #a1bdd1;
+  background-color: #ffffff;
   opacity: 0.5;
 }
 
 .courses .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #39718d;
+  background-color: #77c5d2;
   opacity: 1;
 }
 
@@ -1993,7 +2391,7 @@ section {
 }
 
 #footer .footer-top .footer-info p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: auto;
   font-weight: 400;
   margin-bottom: 0;
@@ -2062,7 +2460,7 @@ section {
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 #footer .footer-top .footer-links ul a:hover {
@@ -2121,5 +2519,11 @@ section {
 @media screen and (max-width: 992px) {
   #hidethis{
     display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  #footer .footer-top .footer-info p {
+    font-size: 16px;
   }
 }
