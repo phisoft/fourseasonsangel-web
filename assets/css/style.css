@@ -265,8 +265,8 @@ display: none!important;
   
   .section-text2 .text-wrapper {
     width: 50%;
-    float: left;
-    padding: 80px 50px 50px 0px;
+    float: right;
+    padding: 80px 100px 50px 0px;
     /* margin-left: -56px; */
   }
   
@@ -313,21 +313,12 @@ display: none!important;
 }
 }
 
-
-@media (max-width: 1250px) and (min-width: 1200px) {
+@media (max-width: 1250px) and (min-width: 992px) {
 .section-text2 .text-wrapper {
-  padding: 55px 0px 0 80px;
+  padding: 55px 50px 0 50px;
   margin-left: -56px;
 }
 }
-
-@media (max-width: 1199px) and (min-width: 1000px) {
-  .section-text2 .text-wrapper {
-    padding: 55px 0px 0px 0px;
-    margin-left: -56px;
-  }
-}
-
 @media (max-width: 992px) and (min-width: 768px) {
 .section-text2 .text-wrapper {
   width: 100%;
