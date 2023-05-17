@@ -1820,10 +1820,10 @@ section {
 .courses::before {
   content: "";
   position: absolute;
-  left: 0;
+  /* left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
+  bottom: 0; */
 }
 
 .courses .section-header {
@@ -2424,6 +2424,47 @@ section {
     transform: rotate(360deg);
   }
 }
+
+
+/* mailto contact us temporary*/
+.contact .mailto{  
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    padding: 30px;
+}
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #39718d;
+}
+
+.contact .php-email-form input {
+  padding: 10px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+.contact .mailto button[type=submit] {
+  background: #77c5d2;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+  margin-top: 18px;
+}
+
+.contact .mailto button[type=submit]:hover {
+  background: #bce3c6;
+  color: #ffffff;
+}
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
