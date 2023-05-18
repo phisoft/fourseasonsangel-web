@@ -542,7 +542,8 @@ display: none!important;
 }
 
 #header .logo img {
-  height: 80px;
+  padding-top: 15px;
+  height: 70px;
   width: auto;
 }
 
@@ -2532,6 +2533,10 @@ section {
   background: #77c5d2;
   border-bottom: 1px solid #77c5d2;
   padding: 60px 0 0 0;
+}
+
+#footer .footer-info .img-fluid {
+  padding-bottom: 15px;
 }
 
 #footer .footer-top .footer-info {
