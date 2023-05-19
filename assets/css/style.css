@@ -375,7 +375,170 @@ display: none!important;
   
 }
 
+/* New About Chris */
+.image-bout img,
+.aboutchris .image-bout img,
+.aboutchris .image-bout-2 img {
+  max-width: 100%;
+  height: auto;
+ }
 
+ .imagesection{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100%;
+  width: 50%;
+ }
+
+.textsection{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100%;
+  background-color: #f7f7f7;
+}
+  .textsection h3 {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 32px;
+  color: #bce3c6;
+  font-weight: 600;
+  width: 80%;
+} 
+
+
+.textsection p {
+	font-size: 18px;
+	margin-bottom: 50px;
+  color: #6c8673;
+  line-height: auto;
+  width: 80%;
+  text-align: justify;
+}
+
+.row .imagesection,
+.row .imagesection2,
+.row .col-md-6 {
+  margin-bottom: 20px;
+}
+
+/* Section 2 */
+
+.imagesection2{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100%;
+  width: 50%;
+}
+.textsection2{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100%;
+  background-color: #f7f7f7;
+}
+.textsection2 h3 {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 32px;
+  color: #fae3b1;
+  font-weight: 600;
+  width: 80%;
+  } 
+
+  .textsection2 p {
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: #a48d5c;
+    line-height: auto;  
+    width: 80%;
+    text-align: justify;
+    }
+
+    .aboutchris .image-bout-2 img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Media Queries for Responsive Design */
+
+    @media (max-width: 767.998px) {
+      #no1{
+        flex-direction: column;
+      }
+      #no2{
+        flex-direction: column-reverse;
+      }
+      .row .imagesection,
+      .row .imagesection2,
+      .row .col-md-6 {
+        margin-bottom: 0;
+      }
+
+      .row .col-md-6:last-child ,
+      .row .textsection2{
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+
+      .imagesection,
+      .imagesection2,
+      .col-md-6 {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 992px) and (min-width: 768px) {
+      #no1{
+        flex-direction: column;
+        width: 210%;
+      }
+      #no2{
+        flex-direction: column-reverse;
+        width: 210%;
+      }
+      
+      .textsection , .textsection2 {
+        padding-top: 20px;
+        /* padding-bottom: 10px; */
+      }
+
+      }
+    
+      @media (max-width: 1200px) and (min-width: 992px) {
+              
+        .textsection h3{
+          width: 90%;
+        }
+        .textsection p{
+          margin-bottom: 10px;
+          width: 90%;
+        }
+
+        .textsection2 h3{
+          width: 90%;
+        }
+        .textsection2 p{
+          margin-bottom: 10px;
+          width: 90%;
+        }
+      }
+    
+        
+
+    /* To Remove The Design Before */
+    .section-text{
+      display: none;
+    }
+    .section-text2{
+      display: none;
+    }
 
 /*--------------------------------------------------------------
 # Back to top button
